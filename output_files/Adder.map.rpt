@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Adder
-Fri Feb 17 14:25:50 2023
+Thu Mar 02 22:03:50 2023
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 17 14:25:50 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 02 22:03:50 2023       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Adder                                       ;
 ; Top-level Entity Name              ; Adder                                       ;
@@ -164,13 +164,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                      ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-; Adder.vhd                        ; yes             ; User VHDL File  ; C:/Users/rimsh/Desktop/directory/Adder.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                            ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                     ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
+; Adder.vhd                        ; yes             ; User VHDL File  ; C:/Users/rimsh/Desktop/directory/Adder/Adder.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -260,13 +260,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Fri Feb 17 14:25:33 2023
+    Info: Processing started: Thu Mar 02 22:03:35 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Adder -c Adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
-    Info (12022): Found design unit 1: Adder-behavior File: C:/Users/rimsh/Desktop/directory/Adder.vhd Line: 11
-    Info (12023): Found entity 1: Adder File: C:/Users/rimsh/Desktop/directory/Adder.vhd Line: 3
+    Info (12022): Found design unit 1: Adder-behavior File: C:/Users/rimsh/Desktop/directory/Adder/Adder.vhd Line: 11
+    Info (12023): Found entity 1: Adder File: C:/Users/rimsh/Desktop/directory/Adder/Adder.vhd Line: 3
 Info (12127): Elaborating entity "Adder" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -276,9 +276,9 @@ Info (21057): Implemented 4 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Fri Feb 17 14:25:50 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 4792 megabytes
+    Info: Processing ended: Thu Mar 02 22:03:50 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:27
 
 

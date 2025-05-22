@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity part1 is
+port(
+
+	x: in std_logic_vector(2 downto 0);
+	f: out std_logic_vector(1 downto 2 );
+	
+);
+end part1;
+architecture behavior of part1 is
+begin
+process(sensitivity list)
+begin
+if( x(0) = '0' and x(1) = '1' and X(2) = "1" THEN
+f(0) <= '1';
+f(1) <= '1';
+elsif condition then
+	sequential statments 
+else 
+	sequentail statments
+end if;
+end process;
+end behavior; 

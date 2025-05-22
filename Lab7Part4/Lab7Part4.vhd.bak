@@ -1,0 +1,54 @@
+--Part4
+libarary ieee;
+use ieee.std_logic_1164.all;
+entity Part4 is
+port(
+c: in std_logic;
+clk4: in std_logic;
+Q: inout std_logic_vector(2 downto 0);
+Seven_Seg: out std_logic_vector(6 downto 0)
+);
+end Part4;
+
+architecture behavior of Part4 is
+signal D: std_logic_vector(2 downto 0);
+
+component Part3
+	port(
+		clk_in : in std_logic;
+		din : in std_logic;
+		qout_not : out std_logic;
+		Q : inout std_logic
+
+);
+end component;
+
+COMPONENT binary2hex
+	port (
+	
+	
+	);
+end component;
+
+Begin
+
+--D(0) <= 
+
+--D(1) <=
+
+--D(2) <=
+
+DPPS1: Part3 port map (clk4 => clk_in, Q => Q, din => c);
+
+DPPS2: Part3 port map (clk4 => clk_in, Q => Q, din => c);
+
+DPPS: Part3 port map (clk4 => clk_in, Q => Q, din => c);
+
+sev_seg binary2hex port map();
+
+end behavior;
+
+);
+
+
+

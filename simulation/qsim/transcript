@@ -1,8 +1,8 @@
-# do CPU.do
+# do Lab5.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:09:33 on Apr 21,2023
-# vcom -work work CPU.vho 
+# Start time: 15:26:26 on Feb 24,2023
+# vcom -work work Lab5.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -12,46 +12,37 @@
 # -- Loading package fiftyfivenm_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
-# -- Compiling entity CPU
-# -- Compiling architecture structure of CPU
-# End time: 15:09:34 on Apr 21,2023, Elapsed time: 0:00:01
+# -- Compiling entity Lab5
+# -- Compiling architecture structure of Lab5
+# End time: 15:26:26 on Feb 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:09:34 on Apr 21,2023
-# vcom -work work output_files/Waveform.vwf.vht 
+# Start time: 15:26:26 on Feb 24,2023
+# vcom -work work Waveform3.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity CPU_vhd_vec_tst
-# -- Compiling architecture CPU_arch of CPU_vhd_vec_tst
-# End time: 15:09:34 on Apr 21,2023, Elapsed time: 0:00:00
+# -- Compiling entity Lab5_vhd_vec_tst
+# -- Compiling architecture Lab5_arch of Lab5_vhd_vec_tst
+# End time: 15:26:26 on Feb 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.CPU_vhd_vec_tst 
-# Start time: 15:09:34 on Apr 21,2023
+# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Lab5_vhd_vec_tst 
+# Start time: 15:26:27 on Feb 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.cpu_vhd_vec_tst(cpu_arch)
+# Loading work.lab5_vhd_vec_tst(lab5_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
 # Loading fiftyfivenm.fiftyfivenm_atom_pack(body)
 # Loading fiftyfivenm.fiftyfivenm_components
-# Loading work.cpu(structure)
+# Loading work.lab5(structure)
 # Loading work.hard_block(structure)
 # Loading fiftyfivenm.fiftyfivenm_lcell_comb(vital_lcell_comb)
 # Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
 # Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
-# Loading fiftyfivenm.fiftyfivenm_clkctrl(vital_clkctrl)
-# Loading fiftyfivenm.fiftyfivenm_ena_reg(behave)
-# Loading altera.dffeas(vital_dffeas)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
-# ** Warning: Design size of 103334 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# after#35
-# End time: 15:09:35 on Apr 21,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# after#33
+# End time: 15:26:27 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

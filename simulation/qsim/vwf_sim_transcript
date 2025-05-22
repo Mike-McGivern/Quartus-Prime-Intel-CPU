@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CPU -c CPU --vector_source="C:/Users/rimsh/Desktop/directory/CPU/output_files/Waveform.vwf" --testbench_file="C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim/output_files/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab5 -c Lab5 --vector_source="C:/Users/rimsh/Desktop/directory/Waveform3.vwf" --testbench_file="C:/Users/rimsh/Desktop/directory/simulation/qsim/Waveform3.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,17 +26,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Apr 21 15:09:30 2023
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CPU -c CPU --vector_source=C:/Users/rimsh/Desktop/directory/CPU/output_files/Waveform.vwf --testbench_file=C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim/output_files/Waveform.vwf.vht
+    Info: Processing started: Fri Feb 24 15:26:23 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab5 -c Lab5 --vector_source=C:/Users/rimsh/Desktop/directory/Waveform3.vwf --testbench_file=C:/Users/rimsh/Desktop/directory/simulation/qsim/Waveform3.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-
- pin "marOut[4]" in vector source file when writing test bench files
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim/" CPU -c CPU
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/rimsh/Desktop/directory/simulation/qsim/" Lab5 -c Lab5
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -55,39 +53,39 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Apr 21 15:09:31 2023
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim/ CPU -c CPU
+    Info: Processing started: Fri Feb 24 15:26:25 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/rimsh/Desktop/directory/simulation/qsim/ Lab5 -c Lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file CPU.vho in folder "C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Lab5.vho in folder "C:/Users/rimsh/Desktop/directory/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Fri Apr 21 15:09:32 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4639 megabytes
+    Info: Processing ended: Fri Feb 24 15:26:25 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim/CPU.do generated.
+C:/Users/rimsh/Desktop/directory/simulation/qsim/Lab5.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vsim -c -do CPU.do
+C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vsim -c -do Lab5.do
 
 Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
 
-# do CPU.do
 
+# do Lab5.do
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:09:33 on Apr 21,2023
-# vcom -work work CPU.vho 
+# Start time: 15:26:26 on Feb 24,2023
+# vcom -work work Lab5.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -97,66 +95,55 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package fiftyfivenm_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
-# -- Compiling entity CPU
-# -- Compiling architecture structure of CPU
-
-# End time: 15:09:34 on Apr 21,2023, Elapsed time: 0:00:01
+# -- Compiling entity Lab5
+# -- Compiling architecture structure of Lab5
+# End time: 15:26:26 on Feb 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:09:34 on Apr 21,2023
-# vcom -work work output_files/Waveform.vwf.vht 
+# Start time: 15:26:26 on Feb 24,2023
+# vcom -work work Waveform3.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity CPU_vhd_vec_tst
-# -- Compiling architecture CPU_arch of CPU_vhd_vec_tst
-# End time: 15:09:34 on Apr 21,2023, Elapsed time: 0:00:00
+# -- Compiling entity Lab5_vhd_vec_tst
+# -- Compiling architecture Lab5_arch of Lab5_vhd_vec_tst
+# End time: 15:26:26 on Feb 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.CPU_vhd_vec_tst 
-# Start time: 15:09:34 on Apr 21,2023
+# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Lab5_vhd_vec_tst 
+# Start time: 15:26:27 on Feb 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.cpu_vhd_vec_tst(cpu_arch)
+# Loading work.lab5_vhd_vec_tst(lab5_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
 # Loading fiftyfivenm.fiftyfivenm_atom_pack(body)
 # Loading fiftyfivenm.fiftyfivenm_components
-# Loading work.cpu(structure)
+# Loading work.lab5(structure)
 # Loading work.hard_block(structure)
 # Loading fiftyfivenm.fiftyfivenm_lcell_comb(vital_lcell_comb)
 # Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
 # Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
-# Loading fiftyfivenm.fiftyfivenm_clkctrl(vital_clkctrl)
-# Loading fiftyfivenm.fiftyfivenm_ena_reg(behave)
-# Loading altera.dffeas(vital_dffeas)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
-# ** Warning: Design size of 103334 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
+# after#33
 
-# after#35
-
-# End time: 15:09:35 on Apr 21,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 15:26:27 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/rimsh/Desktop/directory/CPU/output_files/Waveform.vwf...
+Reading C:/Users/rimsh/Desktop/directory/Waveform3.vwf...
 
-Reading C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim/CPU.msim.vcd...
+Reading C:/Users/rimsh/Desktop/directory/simulation/qsim/Lab5.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/rimsh/Desktop/directory/CPU/simulation/qsim/CPU_20230421150935.sim.vwf
+Writing the resulting VWF to C:/Users/rimsh/Desktop/directory/simulation/qsim/Lab5_20230224152627.sim.vwf
 
 Finished VCD to VWF conversion.
 

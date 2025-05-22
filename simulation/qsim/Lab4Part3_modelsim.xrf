@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rimsh/Desktop/directory/Lab4Part3.vhd
+source_file = 1, C:/Users/rimsh/Desktop/directory/Waveform.vwf
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/rimsh/Desktop/directory/db/Lab4Part3.cbx.xml
+design_name = Lab4Part3
+instance = comp, \f~output\, f~output, Lab4Part3, 1
+instance = comp, \x2~input\, x2~input, Lab4Part3, 1
+instance = comp, \x1~input\, x1~input, Lab4Part3, 1
+instance = comp, \f~0\, f~0, Lab4Part3, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, Lab4Part3, 1

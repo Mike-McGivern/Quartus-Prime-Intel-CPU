@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity Vhdl2 is 
+	port(
+		x1 : in std_logic;
+		x2 : in std_logic;
+		x3 : in std_logic
+		f out std_logic
+		);
+		end Vhdl2;
+	Architecture behavior of Vhdl2 is 
+		begin
+			f <= not x1 and ( x2 or not x3);
+			end behavior;
